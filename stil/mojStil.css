@@ -1,0 +1,494 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	height:100%;	
+}
+
+
+body {
+	background-color:#FFF;
+	background-image:url(moj_stil/bg.png);
+	background-repeat:repeat;
+}
+
+.no-margin {
+	margin:0 !important;	
+}
+
+.section {
+	width:570px;
+	margin:10px auto;
+	background-color:#FFF;
+	border:1px solid #DDD;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+
+.section-body {
+	padding:10px;
+}
+
+.input-mysize {
+	width:350px;
+}
+.section-head {
+	background-color:whiteSmoke;
+	padding:10px;
+	border-bottom:1px solid #DDD;
+	background-image:url(moj_stil/loginBg.png);
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.section-head h3 {
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow:1px 1px 0 white;
+	text-transform:uppercase;
+}
+
+#logoNaslov {
+	margin:0 auto;
+	width:386px;
+	height:99px;
+	background-image:url(moj_stil/Logo.png);	
+}
+
+
+#logo {
+	margin-left:10px;
+	font-weight: bold;
+	color: #E5E5E5;
+	text-shadow: inset 0 1px 0 rgba(0, 0, 0, .1);
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	transition: all .2s linear;
+}
+#sadrzaj {
+	background-color:#FFF;
+	border:1px solid #DDD;
+	border-top:none;
+	padding:15px;
+	overflow:visible;
+	position:relative;
+}
+.nav {
+	margin-bottom:0;
+	padding-bottom:0;
+}
+
+.beta {
+	width:72px;
+	height:69px;
+	background-image:url(moj_stil/beta_ribbon.png);
+	position:absolute;
+	top:0;
+	left:0;	
+	z-index:5000;
+}
+
+.red {
+	color:red;
+}
+
+
+.dropdown-menu {
+	max-height:250px;
+}
+
+#dropdown-innerdiv {
+	max-height:240px;
+	overflow:auto;
+	overflow-x:hidden;
+}
+
+.alert {
+	display:none;
+}
+
+#uspjehPovratak, #greskaPovratak {
+	display:none;
+}
+
+.loader {
+	background-image:url(moj_stil/loader.gif);
+	width:16px;
+	height:16px;
+	display:none;
+}
+
+.chat {
+	height:460px;
+	overflow:hidden;
+	background-color:#FFF;
+	position:relative;
+	border: 1px solid rgb(221, 221, 221);
+}
+
+.chat-header {
+	padding:10px;
+	background-image: -moz-linear-gradient(top, white, rgb(242, 242, 242));
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(rgb(242, 242, 242)));
+	background-image: -webkit-linear-gradient(top, white, rgb(242, 242, 242));
+	background-image: -o-linear-gradient(top, white, rgb(242, 242, 242));
+	background-image: linear-gradient(to bottom, white, rgb(242, 242, 242));
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+	border-bottom: 1px solid rgb(212, 212, 212);
+	padding-bottom:0px;
+}
+
+.chat-icon {
+	display:block;
+	float:left;
+	width:11px;
+	height:13px;
+	margin:7px;
+	margin-left:0;
+}
+
+.icon-online {
+	background-image:url(moj_stil/online.png);
+	background-position:center;
+}
+
+.icon-offline {
+	background-image:url(moj_stil/offline.png);
+	background-position:center;
+}
+.icon-zauzet {
+	background-image:url(moj_stil/zaposlen.png);
+	background-position:center;
+}
+
+.chat-dropdown {
+	float:right;
+	display:block;
+	padding:5px;
+	width:11px;
+	height:11px;
+	margin:7px;
+}
+
+.chat-ime {
+	padding:5px;
+	display:block;
+	float:left;
+}
+.chat-row {
+	padding:5px;
+	border-bottom:1px solid whitesmoke;
+}
+.chat-row:hover {
+	background-color:whitesmoke;
+}
+
+.chat-disabled {
+	height:inherit;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;	
+	background-color:#F5F5F5;
+	opacity:0.8;
+}
+
+.profile-image {
+	background-color:#FFF;
+}
+
+.chat-loader {
+	background-image:url(moj_stil/chat-loader.gif);
+	width:85px;
+	height:85px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-42px;
+	margin-top:-85px;
+}
+.chat-body {
+	height:460px;
+	overflow:auto;
+}
+
+.test {
+	width:100px;
+	height:100px;
+	overflow:auto;
+	overflow-x:hidden;
+}
+
+#big_loader {
+	width:50px;
+	height:50px;	
+	background-color:#FFFFFF;
+	border:1px solid #DDD;
+	background-image:url(moj_stil/22.gif);
+	position:fixed;
+	display:none;
+	top:50%;
+	left:50%;
+	margin-left:-25px;
+	margin-top:-25px;
+	background-position:center;
+	background-repeat:no-repeat;
+	
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	
+	box-shadow:0 0 10px #747474;
+	z-index:5000;
+}
+
+.dropdown-toggle {
+	height:18px;
+}
+
+.footer {
+	margin:10px;
+	color:#999;
+	text-shadow:1px 1px 0 white;	
+}
+
+.table {
+	table-layout: fixed; 
+	width: 100%;
+}
+
+.table tr td {
+	word-wrap: break-word;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.table tr th {
+	text-align:center;
+}
+
+div.btn-group {
+    margin: 0 auto; 
+    text-align: center;
+    width: inherit;
+    display: inline-block;
+}
+
+.dropdown-menu {
+	text-align:left;	
+}
+
+.post {
+	position:relative;
+}
+
+.post-body {
+	padding:10px;
+	background-color:#FFF;
+	border:2px solid #e9e9e9;
+	border-top:none;
+	border-bottom:none;
+}
+.post-header {
+	padding:10px;
+	background-image:url(moj_stil/loginBg.png);
+	border:2px solid #e9e9e9;
+	border-bottom:1px solid #e9e9e9;
+}
+.post-footer {
+	padding:10px;
+	background-color:#FFF;
+	border:2px solid #e9e9e9;
+	border-top:none;
+}
+.strjelica {
+	width:15px;
+	height:15px;
+	background-image:url(moj_stil/strjelica.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	left:-15px;
+	top:10px;
+}
+
+.thumbnail img {
+	width:auto;
+	height:auto;	
+}
+
+.odgovor {
+	margin-top:10px;	
+}
+
+.caption {
+	text-align:center;
+}
+.post_wrapper {
+	margin-bottom:10px;
+}
+.post-odgovori {
+	float:right;
+	padding-top:10px;
+	width:100%;	
+}
+
+#fade {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:#FFFFFF;
+	z-index:1000;
+	display:block;
+	opacity:0.8;	
+}
+
+#postovi_wrapper {
+	position:relative;	
+}
+
+#loader {
+	background-color:#FFF;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	box-shadow:0 0 10px #747474;
+	z-index:5000;
+	padding:10px;
+	width:200px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-100px;
+	height:60px;
+	margin-top:-30px;	
+}
+
+#loader_provjera_postova {
+	padding:10px;
+	position:fixed;
+	top:50;
+	right:10px;
+	background-color:#FFF;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	display:none;
+	
+	box-shadow:0 0 10px #747474;
+	z-index:5000;
+}
+
+#loader_provjera_postova p,{
+	padding:0;
+	margin:0;	
+}
+#nema_postova  {
+	margin:0;	
+}
+
+#btn-center {
+	text-align:center;	
+}
+
+p.alert, p{
+	margin:0;	
+}
+.ucitaj_jos {
+	margin-top:10px;	
+}
+
+.sco.active {
+	background-color:#eeeeee;	
+}
+
+#rezultati {
+	padding-top:5px;
+	padding-bottom:5px;
+	border:1px solid #ccc;
+	color:#FFFFFF;
+	box-shadow:0 0 10px #ccc;
+	background-color:#FFF;
+	display:none;
+	width:200px;
+	max-height:200px;
+	overflow:auto;
+	overflow-x:hidden;
+	position:absolute;
+}
+#rezultati a:hover table{
+	background-color:#08C;	
+	color:white;
+}
+
+#rezultati table {
+	width:100%;
+}
+
+#pretrazi {
+	background-image:url(moj_stil/search.png);
+	background-repeat:no-repeat;
+	padding-left:20px;
+	background-position:center left;	
+}
+
+.thumbnail {
+	background-color:#FFF;	
+}
+
+#statusSco tr td, #statusSco tr th {
+	text-align:center !important;
+	vertical-align:middle !important;
+	border-top:none;
+}
+#statusSco {
+	margin-bottom:5px;	
+}
+.item {
+	padding-top:5px !important;
+	padding-bottom:5px !important;
+}
+.level1 {
+	padding-left:30px !important;
+}
+.level2 {
+	padding-left:45px !important;
+}
+.level3 {
+	padding-left:60px !important;
+}
+.well {
+	padding:0px !important;
+	padding-top:5px !important;
+	padding-bottom:5px !important;
+}
+#frameWindow {
+	border-collapse:collapse;
+	border:none;
+}
+
+form {
+	margin:0 !important;	
+}
+#scoWindow {
+	overflow:hidden !important;	
+}
+#scoWindow > iframe {
+	overflow:hidden !important;	
+}
+
+#frameWindow {
+	border:none;
+	border-collapse:collapse;
+	overflow:hidden !important;	
+}
+#frameWindow > iframe {
+	border:none;
+	border-collapse:collapse;
+	overflow:hidden;	
+}
